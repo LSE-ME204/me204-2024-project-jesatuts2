@@ -88,6 +88,7 @@ def paginate_through_teams_over_the_years(years, url):
 paginate_through_teams_over_the_years(years, url)
 teams_df = pd.DataFrame({'team_id': team_ids, 'team_name': team_names, 'division': team_divisions, 'link': team_links})
 print(teams_df)
+teams_df.to_csv('../Data/Raw/teams.csv', index=False)
 
 # ******************************************************************************************************************************
 # 4 Go to each of the team's links and scrape the meet information
@@ -160,4 +161,128 @@ def paginate_through_teams_to_get_meet_data(years, team_links):
 paginate_through_teams_to_get_meet_data(years, team_links)
 meets_df = pd.DataFrame({'meet_id': meet_ids, 'meet_date': meet_dates, 'season': meet_seasons, 'link': meet_links})
 print(meets_df)
+meets_df.to_csv('../Data/Raw/meets.csv', index=False)
 
+# ******************************************************************************************************************************
+# 5 Go to each of the meet's links and scrape the score information
+
+meet_link = meet_links[1]
+meet_ids = []
+team_ids = []
+team_vt_scores = []
+team_ub_scores = []
+team_bb_scores = []
+team_fx_scores = []
+team_meet_scores = []
+gymnast_ids = []
+gymnast_names = []
+gymnast_vt_scores = []
+gymnast_ub_scores = []
+gymnast_bb_scores = []
+gymnast_fx_scores = []
+gymnast_aa_scores = []
+meet_hosts = []
+
+def get_score_info(url):
+    css_selector = 'div.rt-tbody'
+    get_url_and_wait_for_elements_to_load(url, css_selector)
+    response = Selector(text=driver.page_source)  
+    
+    meet_table = response.css(css_selector)
+    meet_table_rows = response.css('div.rt-tbody > div.rt-tr-group')
+    team_button_clicker = driver.find_element(By.CSS_SELECTOR, '#teambtn')
+    row_count = 0
+
+    if response.css('p:nth-child(4)').get():
+        meet_host = response.css('p:nth-child(4)::text').get()
+    else:
+        meet_host = 'NaN'
+    
+    meet_hosts.append(meet_host)
+
+    for row in meet_table_rows:
+        row_count = row_count + 1
+        meet_id = url.split('/')[-1] # To match to the meet_id column in the meets table as a foreign key
+        team_href = meet_table_rows.css('div > div > a::attr(href)').get()
+        team_id = team_href.split('/')[-1]
+        
+        team_vt_score = (meet_table_rows.css('div:nth-child(4)::text').get())
+        team_ub_score = (meet_table_rows.css('div:nth-child(5)::text').get())
+        team_bb_score = (meet_table_rows.css('div:nth-child(6)::text').get())
+        team_fx_score = (meet_table_rows.css('div:nth-child(7)::text').get())
+        team_meet_score = (meet_table_rows.css('div:nth-child(8) > strong::text').get())
+
+        team_ids.append(team_id)
+        team_vt_scores.append(team_vt_score)
+        team_ub_scores.append(team_ub_score)
+        team_bb_scores.append(team_bb_score)
+        team_fx_scores.append(team_fx_score)
+        team_meet_scores.append(team_meet_score)
+
+    team_button_clicker.click()
+    response = Selector(text=driver.page_source)
+
+    number_of_teams = row_count
+    team_results_table = response.css('div.rt-tbody')
+    results_table_rows = team_results_table.css('div.rt-tr-group')
+
+    for team in range(0, number_of_teams):
+        # Click on the team name
+        selector = '#team' + str(team)
+        driver.find_element(By.CSS_SELECTOR, selector).click()
+        # Iterate over the rows and scrape the gymnast data and scores
+        # Add the data to the lists
+        for row in results_table_rows:
+            meet_id = url.split('/')[-1] # To match to the meet_id column in the meets table as a foreign key
+
+            gymnast_name = results_table_rows.css('a::text').get()
+            gymnast_href = results_table_rows.css('a::attr(href)').get()
+            gymnast_id = gymnast_href.split('/')[-1]
+            gymnast_team = gymnast_href.split('/')[-2]
+            gymnast_meet_id = meet_id
+
+            if results_table_rows.css('div:nth-child(3)::text').get():
+                gymnast_vt_score = float(results_table_rows.css('div:nth-child(3)::text').get())
+            else:
+                gymnast_vt_score = 'NaN'
+
+            if results_table_rows.css('div:nth-child(4)::text').get():
+                gymnast_ub_score = float(results_table_rows.css('div:nth-child(4)::text').get())
+            else:
+                gymnast_ub_score = 'NaN'
+
+            if results_table_rows.css('div:nth-child(5)::text').get():
+                gymnast_bb_score = float(results_table_rows.css('div:nth-child(5)::text').get())
+            else:
+                gymnast_bb_score = 'NaN'
+
+            if results_table_rows.css('div:nth-child(6)::text').get():
+                gymnast_fx_score = float(results_table_rows.css('div:nth-child(6)::text').get())
+            else:
+                gymnast_fx_score = 'NaN'
+
+            if results_table_rows.css('div:nth-child(7)::text').get():
+                gymnast_aa_score = float(results_table_rows.css('div:nth-child(7)::text').get())
+            else:
+                gymnast_aa_score = 'NaN'
+        
+            gymnast_ids.append(gymnast_id)
+            gymnast_names.append(gymnast_name)
+            gymnast_vt_scores.append(gymnast_vt_score)
+            gymnast_ub_scores.append(gymnast_ub_score)
+            gymnast_bb_scores.append(gymnast_bb_score)
+            gymnast_fx_scores.append(gymnast_fx_score)
+            gymnast_aa_scores.append(gymnast_aa_score)
+
+    return 'honk' #I'm not sure about this return statement
+
+print(meet_link)
+# get_url_and_wait_for_elements_to_load(team_link, css_selector)
+get_score_info(meet_link)
+meets_df['host'] = meet_hosts
+print(meets_df)
+team_scores_df = pd.DataFrame({'team_id': team_ids, 'meet_id': meet_ids, 'vt_score': team_vt_scores, 'ub_score': team_ub_scores, 'bb_score': team_bb_scores, 'fx_score': team_fx_scores, 'meet_score': team_meet_scores})
+team_scores_df.to_csv('../Data/Raw/team_scores.csv', index=False)
+
+gymnast_scores_df = pd.DataFrame({'gymnast_id': gymnast_ids, 'gymnast_firstname': gymnast_firstnames, 'gymnast_lastname': gymnast_lastnames, 'team_id': team_ids, 'meet_id': meet_ids, 'vt_score': gymnast_vt_scores, 'ub_score': gymnast_ub_scores, 'bb_score': gymnast_bb_scores, 'fx_score': gymnast_fx_scores, 'aa_score': gymnast_aa_scores})
+gymnast_scores_df.to_csv('../Data/Raw/gymnast_scores.csv', index=False)
