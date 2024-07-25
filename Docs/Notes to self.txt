@@ -132,3 +132,138 @@ team_names: an array of the names of the teams (and maybe also their numbers)
 
  
 
+
+# What do I want to end up with?
+- Tenniest apparatus (per year + aggregated)
+- Tenniest teams (per year + aggregrated)
+- Top 10 (20?) goats of all time (by average score) (by apparatus?)
+- Bubble maps x axis year, y axis team, size = no. 10s (colour/pie apparatus if poss?)
+- Avg score over time (colour by team)
+ 
+ 
+## MV end point
+- 10s per team, sorted (sum) (who has had the most tens)
+- GOATs maybe?
+
+# What is in the data?
+Table 1: Teams
+    {
+    'team_id': int (eg. 1) (PK)
+    'team_name': str #(eg. 'Auburn),
+    'team_link': url/str (eg. "https://www.roadtonationals/team/645")
+    }
+
+Table 2: Meets
+    {
+    'meet_id': int (eg. 124) (PK)
+    'host': team_id (FK)
+    'year': int
+    'date': datetime
+    }
+
+Table 3: Gymnasts
+    {
+    'gymnast_id': int (eg. 123) (PK)
+    'first_name': str,
+    'last_name': str,
+    'team_id': team_id, int (FK)
+    }
+
+Table 4: Gymnast Results
+    {
+    'meet_id': meet_id (FK)
+    'gymnast_id': gymnast_id (FK)
+    'vt_score': float
+    'ub_score': float
+    'bb_score': float
+    'fx_score': float
+    'aa_score': float
+    }
+    
+Team 5: Team results
+    {
+    'meet_id': meet_id (FK)
+    'team_id': team_id (FK)
+    'vt_score': float
+    'ub_score': float
+    'bb_score': float
+    'fx_score': float
+    'total_score': float
+    }
+}
+
+# What data are in the visualisations?
+Visualisation 1: Tenniest apparatus
+    meet_id['year']
+    gymnast_results['vault']
+        -- Filter out anything that isn't a 10
+            -- Group by meet_id['year']
+            -- Count remaining (for no. of 10s per year)
+        -- Count remaining (for aggregate)
+    gymnast_results['bars']
+        -- Filter out anything that isn't a 10
+            -- Group by meet_id['year']
+            -- Count remaining (for no. of 10s per year)
+        -- Count remaining (for aggregate)
+    gymnast_results['beam']
+        -- Filter out anything that isn't a 10
+            -- Group by meet_id['year']
+            -- Count remaining (for no. of 10s per year)
+        -- Count remaining (for aggregate)
+    gymnast_results['floor']
+        -- Filter out anything that isn't a 10
+            -- Group by meet_id['year']
+            -- Count remaining (for no. of 10s per year)
+        -- Count remaining (for aggregate)
+
+Visualisation 1: Tenniest teams
+    meet_id['year']
+    melt gymnast_results on apparatus
+    filter out anything that isn't a 10
+    group by team_id
+    count 10s per team
+    merge on team_id to get team_name
+    - x-axis: number of 10s
+    - y-axis: team
+
+
+# Some facts about the data & the webpage
+
+## Some selectors:
+- Year selector on the Results page: #year_filter
+    #year_filter > option:nth-child(1)
+- Teams selector on the Results page: div.rt-tbody a
+- Division selector of the Results page: div.rt-tbody div > div:nth-child(8)
+
+
+---
+
+
+#Using Selenium
+- findElement() helps Selenium locate elements on the web page using DOM element selectors like ID, XPATH, or CSS selectors.
+
+
+## Merging, pivoting etc
+
+## A place to collect some variables
+team_names: an array of the names of the teams (and maybe also their numbers)
+
+
+# The logic:
+
+**1. fetch the front page**
+- This page displays a list of teams, with the most recent (season) results.
+    if "Division" == 1:
+        these are the teams
+
+**2. Iterate through the years back to 2015**
+    if "Division" == 1 AND the names aren't in the team_names array:
+        add these teams to the list
+        
+**3. Now go to the team pages**
+- URLs are follow a format similar to ~/team/[team_id]
+    - We can prob get them from the front page and just pass that column into this step?
+- On this page, we see a bunch of data about the most recent season for each team, including a table that lists all the meets the team
+
+ 
+

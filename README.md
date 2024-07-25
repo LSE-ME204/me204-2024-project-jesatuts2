@@ -11,8 +11,8 @@ Created by Jes Hyne (@jesatuts2)
 2. Create a new conda environment for this project and activate it
 
 ```
-conda create -n spiders-env python=3.11 -y
-conda activate spiders-env
+conda create -n gymternet -- python 3.12
+conda activate base 
 conda install pip -y
 ```
 
@@ -21,3 +21,12 @@ conda install pip -y
 ```
 pip install -r ../requirements.txt
 ```
+
+4. If running on VSCode, clone this repository and activate the corret environemnt every time you are running a notebook.
+
+5. Go through each of the notebooks under the `notebooks` ffolder, read and then run.
+
+## What you will find
+
+- Scraping is time consuming and buggy. You will need to re-run the scraping methods several times to get through all the crashes.
+
