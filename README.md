@@ -11,9 +11,10 @@ Created by Jes Hyne (@jesatuts2)
 2. Create a new conda environment for this project and activate it
 
 ```
-conda create -n gymternet -- python 3.12
-conda activate base 
-conda install pip -y
+!conda init
+!conda create -n gymternet -- python 3.12
+!conda activate gymternet 
+!conda install pip -y
 ```
 
 3. Install the required packages
