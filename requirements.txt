@@ -12,3 +12,4 @@ sqlalchemy
 ipython-sql
 ipykernel==6.29.5
 ipython==8.26.0
+plotly
