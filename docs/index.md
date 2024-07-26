@@ -1,6 +1,8 @@
 #About me: 
 
 Who are you and why did you create this project (“I am a Econ student from XXXX and I created this project as part of the LSE Summer School ME204 course (2024)” should suffice, for example)
+Je suis un bête porc.
+
 #The Data: 
 
 What data source did you choose? Why did you choose it? How did you collect it? What was challenging about it?
