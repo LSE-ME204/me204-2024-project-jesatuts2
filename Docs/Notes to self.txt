@@ -21,9 +21,9 @@ Table 1: Teams
 Table 2: Meets
     {
     'meet_id': int (eg. 124) (PK)
-    'host': team_id (FK)
+    'team_id': int (eg. 81) (FK)
     'year': int
-    'date': datetime
+    'date': date
     }
 
 Table 3: Gymnasts
