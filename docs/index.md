@@ -1,6 +1,6 @@
 # The gymternet: an exploration of toepoint, artistry, and drama
 
-### About me
+### 👋 About me
 
 Hello. My name is Jes Hyne. For the past my whole life, I have been intrigued and captivated by the skill, strength, and fearlessness of women artistic gymnasts (the men, I'm sure, are very talented also). Sadly, we only really get an opportunity to watch the gymnastics once every four years, at the Olympics. More motivated gymnastics fans can find their way the yearly World Championships, but this is not nearly enough to scratch the itch.
  
@@ -14,7 +14,7 @@ With all this score bunching, how can we tell the good from the great? And more 
 
 Well, for the last two years, I have been painstakingly manually collecting, inputting, and analysing data from live score sheets into my own database. I live near the *beach*. These events happen in the *morning*. In *summer*. On the *weekend*. I can't be spending my life typing little numbers into little boxes. It's repetitive, requires precision, and follows some fairly strict protocol to get the job done. This is the sort of work that machines love the way I love going to the beach on a summer morning. It's time to delegate.
 
-### The Data: 
+### 📊 The Data 
 
 [Road to Nationals (RTN)]('https://roadtonationals.com/results/index.php') started off as some gymnerds' project to make gymnastics scores data more accessible to the community, and has since been adopted as the official statistical site of NCAA Gymnastics, and have been providing tools for coaches, athletes, and fans ever since.
 
@@ -33,9 +33,9 @@ As a consequence of this intuitive web structure, I started off scraping directl
 When I became aware of the hidden api structure within the site, I was back in business. I could navigate around the website using the same principles (using the team ids, meet ids and years to form curls to feed into my hungry scraping machine).
 
 
-### Key Findings: 
+### 🔬 Key Findings 
 
-#### Tenniest apparatus
+#### 🔟 Tenniest apparatus
 
 ***Setting the scene:*** **Imagine I'm a NCAA college gymnast, and I think it might feel good a 10 every once in a while. Where should I focus my training?**
 
@@ -55,7 +55,7 @@ We can see that the slices per year have some more meaningful differences in the
 <iframe src="figures/02.%20tenniest_apparatus_per_year.html" title="Tenniest apparatus per year" width="800" height="450"></iframe>
 <div align="right"><b>Figure 2. Tenniest apparatus per year.</b></div>
 
-#### Tenniest teams
+#### 🔟 Tenniest teams
 
 ***Setting the scene:*** **Imagine I'm a prospective NCAA college gymnast, and I think it might feel good a 10 every once in a while. Which colleges should I consider attending?**
 
@@ -80,9 +80,9 @@ And what if we want to compare some teams head-to-head, apparatus-by-apparatus? 
 <iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year" title="Tenniest teams per apparatus per year" width="800" height="800"></iframe>
 <div align="right"><b>Figure 5. Tenniest teams per apparatus per year</b></div>
 
-Play around by clicking on and off the items in the legend. Future versions of this graph will export with the drop-down menu and check-boxes as in the ![Notebook](../notebooks/NB03-EDA-and-Dataviz.ipynb) connected to this project.
+Play around by clicking on and off the items in the legend. Future versions of this graph will export with the drop-down menu and check-boxes as in the Notebook connected to this project.
 
-### Future: 
+### 🔮 The Future 
 Most importantly, I'd like to next dig into the data about the gymnasts themselves. Who are some of the greatest GOATS of all time<sup>*</sup>? For each apparatus? Which teams do they prefer?
 
 I'd like to do some analysis on the average and median scores of gymnasts, as this is, in my view, a better predictor of their overall performance than their capability to get a 10.
@@ -91,8 +91,8 @@ Eventually, I'd like to build a small tool that uses indicators like performance
 
 There's a real potential to stir up some good gossip if I am able to integrate some information I already have about the judges into this data and find some patterns and (we secretly hope) *corruption*. Or unconscious bias, whatever. Nobody seems to be really tracking that sort of information and there's nothing a gymfan likes more than complaining about the judges. *What if we could evidence our whingeing?* That's the dream.
 
-Finally, I'd like to integrate the tools and skills I have built doing this assignment into my existing rails gymternet project, and buy myself some beach-time. If my fantasy team wins next year, I'll buy you a beer.
+Finally, I'd like to integrate the tools and skills I have built doing this assignment into my existing rails gymternet project, and buy myself some beach-time. If my fantasy team wins next year, I'll buy you a beer 🍻
 
-<sup>*</sup> as always, time began in 2015.
+<sup>* as always, time began in 2015.</sup>
 
 ![That's me out](https://i0.wp.com/balancebeamsituation.com/wp-content/uploads/2022/02/curtissalute.gif?resize=474%2C305&ssl=1)
