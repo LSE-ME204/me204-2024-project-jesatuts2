@@ -70,10 +70,13 @@ What about specialist schools? Recently, Utah is known for their wonderful beam 
 
 And what if we want to compare some teams head-to-head, apparatus-by-apparatus? We can do that too.
 
-<iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year.html" title="Tenniest apparatus per apparatus per year" width="800"></iframe>
-
-What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
-
+<iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year" title="Tenniest teams per apparatus per year" width="800"></iframe>
 
 ### Future: 
-What would you do next if you had more time? What other questions could you ask of this data? What other data sources could you use to complement this data?
+I'd like to next dig into the data about the gymnasts themselves. Who are some of the greatest GOATS of all time*? For each apparatus? Which teams do they prefer?
+
+I'd like to do some analysis on the average and median scores of gymnasts, as this is, in my view, a better predictor of their overall performance than their capability to get a 10.
+
+Eventually, I'd like to build a small tool that uses indicators like performance frequency, average or median score, and other factors that might impact performance that aren't currently captured in my data (home or away might factor, judging panels might factor, proximity to mid-terms might factor, etc).
+
+Finally, I'd like to integrate the tools and skills I have built doing this assignment into my existing rails gymternet project, and buy myself some beach-time. If my fantasy team wins next year, I'll buy you a beer.
