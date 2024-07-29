@@ -80,3 +80,7 @@ I'd like to do some analysis on the average and median scores of gymnasts, as th
 Eventually, I'd like to build a small tool that uses indicators like performance frequency, average or median score, and other factors that might impact performance that aren't currently captured in my data (home or away might factor, judging panels might factor, proximity to mid-terms might factor, etc).
 
 Finally, I'd like to integrate the tools and skills I have built doing this assignment into my existing rails gymternet project, and buy myself some beach-time. If my fantasy team wins next year, I'll buy you a beer.
+
+There's a real potential to stir up some good gossip if I am able to integrate some information I already have about the judges into this data and find some patterns and (we secretly hope) *corruption*. Or unconscious bias, whatever. Nobody seems to be really tracking that sort of information and there's nothing a gymfan likes more than complaining about the judges. *What if we could evidence our whingeing?* That's the dream.
+
+![That's me out](https://i0.wp.com/balancebeamsituation.com/wp-content/uploads/2022/02/curtissalute.gif?resize=474%2C305&ssl=1)
