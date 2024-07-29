@@ -11,10 +11,10 @@ Created by Jes Hyne (@jesatuts2)
 2. Create a new conda environment for this project and activate it
 
 ```
-!conda init
-!conda create -n gymternet -- python 3.12
-!conda activate gymternet 
-!conda install pip -y
+conda init
+conda create -n gymternet -- python 3.12
+conda activate gymternet 
+conda install pip -y
 ```
 
 3. Install the required packages
@@ -25,7 +25,7 @@ pip install -r ../requirements.txt
 
 4. If running on VSCode, clone this repository and activate the corret environemnt every time you are running a notebook.
 
-5. Go through each of the notebooks under the `notebooks` ffolder, read and then run.
+5. Go through each of the notebooks under the `notebooks` folder, read and then run.
 
 ## What you will find
 
