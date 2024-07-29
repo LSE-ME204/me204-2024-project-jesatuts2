@@ -48,7 +48,11 @@ We can see that the slices per year have some more meaningful differences in the
 
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
-<iframe src="https://github.com/LSE-ME204/me204-2024-project-jesatuts2/blob/main/docs/figures/tenniest_apparatus_animation.html"></iframe>
+**direct link here**
+![text](https://lse-me204.github.io/me204-2024-project-jesatuts2/figures/02.%20tenniest_apparatus_per_year.html)
+
+**iframe under here**
+<iframe src="https://lse-me204.github.io/me204-2024-project-jesatuts2/figures/02.%20tenniest_apparatus_per_year.html"></iframe>
 
 ### Future: 
 What would you do next if you had more time? What other questions could you ask of this data? What other data sources could you use to complement this data?
