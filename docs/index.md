@@ -34,7 +34,7 @@ When I became aware of the hidden api structure within the site, I was back in b
 
 #### Tenniest apparatus
 
-**Setting the scene:** Imagine I'm a NCAA college gymnast, and I think it might feel good a 10 every once in a while. Where should I focus my training?
+***Setting the scene:*** **Imagine I'm a NCAA college gymnast, and I think it might feel good a 10 every once in a while. Where should I focus my training?**
 
 There is a truism in elite gymnastics that states that the less gymnastics you do, the higher you will score. We saw this play out over the 2020/1 Olympic Games, with Olympic All-Round gold-medallist Sunisa Lee dropping elements of her routines that were attracting more execution deductions than they were contributing to her overall difficulty value. Evidentally, it paid off.
 
@@ -42,16 +42,23 @@ NCAA doesn't have a separate difficulty score, so it ought to follow that doing 
 
 But what do we have here?
 
-![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](/figures/01.%20tenniest_apparatus_ever.svg)
+![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](figures/01.%20tenniest_apparatus_ever.svg)
 
 The data show that there is no major difference between apparatus in terms of what I'm dubbing *tenniness*.
 
 We can see that the slices per year have some more meaningful differences in them, so I broke them down into a little animation to explore what I like to think of as trends in perceiving perfection over the years. In the last two seasons, we can see both the quantity of 10s overall has increased dramatically, and judges seem to be favouring floor exercise for leniency.
 
-**relative iframe under here**
 <iframe src="figures/02.%20tenniest_apparatus_per_year.html" title="Tenniest apparatus per year" width="800" height="400"></iframe>
 
 #### Tenniest teams
+
+***Setting the scene:*** **Imagine I'm a prospective NCAA college gymnast, and I think it might feel good a 10 every once in a while. Which colleges should I consider attending?**
+
+Which teams have been the most successful at ~bribing the judges~ performing perfect gymnastics? Georgia and Alabama have legacies of dominance, but most recently Oklahoma has been the most dominant team. 
+
+In the meantime, fans complain that in recent years judges are increasingly prepared to award a 10 for excellent (if imperfect) routines. What do the data say?
+
+![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](figures/03.%20tenniest_teams_ever.svg)
 
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
