@@ -26,7 +26,7 @@ The structure of the RTN website is very tidy; the front page gives you the inte
 
 
 ![Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.](https://github.com/user-attachments/assets/297ddf3f-de9e-48e5-9bd7-17b9cd82d35f)  
-*Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.*
+<div align="center">*Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.*</div>
 
 As a consequence of this intuitive web structure, I started off scraping directly using Scrapy; using the slugs from the `<a>` tags to get the next set of links to scrape from. This became very slow, very fast. RTN has a lovely interface, but the pages load s l o w l y. This wasn't working.
 
@@ -46,14 +46,14 @@ NCAA doesn't have a separate difficulty score, so it ought to follow that doing 
 But what do we have here?
 
 <iframe src="figures/01.%20tenniest_apparatus_ever.html" title="Tenniest apparatus ever" width="800" height="400"></iframe>
-*Figure 1: Tenniest apparatus ever.*
+<div align="center">*Figure 1: Tenniest apparatus ever.*</div>
 
 The data show that there is no major difference between apparatus in terms of what I'm dubbing *tenniness*.
 
 We can see that the slices per year have some more meaningful differences in them, so I broke them down into a little animation to explore what I like to think of as trends in perceiving perfection over the years. In the last two seasons, we can see both the quantity of 10s overall has increased dramatically, and judges seem to be favouring floor exercise for leniency.
 
 <iframe src="figures/02.%20tenniest_apparatus_per_year.html" title="Tenniest apparatus per year" width="800" height="450"></iframe>
-*Figure 2. Tenniest apparatus per year.*
+<div align="center">*Figure 2. Tenniest apparatus per year.*</div>
 
 #### Tenniest teams
 
@@ -64,19 +64,19 @@ Which teams have been the most successful at ~~bribing the judges~~ performing p
 In the meantime, fans complain that in recent years judges are increasingly prepared to award a 10 for excellent (if imperfect) routines. What do the data say?
 
 <iframe src="figures/03.%20tenniest_teams_ever.html" title="Tenniest teams ever" width="800" height="600"></iframe>
-*Figure 3. Tenniest teams ever*
+<div align="center">*Figure 3. Tenniest teams ever*</div>
 
 No surprises here; Oklahoma dominates this analysis. However, the relatively poor perfomance of Alabama and Georgia is somewhat surprising. Could it be that history didn't start in 2015 and their dominance pre-dates this analysis? Scientists will never know.
 
 What about specialist schools? Recently, Utah is known for their wonderful beam rotation, and Cal has excellent bars workers. Are they excellent enough to show up in the disaggregated data?
 
 <iframe src="figures/04.%20tenniest_teams_per_apparatus.html" title="Tenniest apparatus per apparatus" width="800" height="600"></iframe>
-*Figure 4. Tenniest teams per apparatus*
+<div align="center">*Figure 4. Tenniest teams per apparatus*</div>
 
 And what if we want to compare some teams head-to-head, apparatus-by-apparatus? We can do that too.
 
 <iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year" title="Tenniest teams per apparatus per year" width="800" height="800"></iframe>
-*Figure 5. Tenniest teams per apparatus per year*
+<div align="center">*Figure 5. Tenniest teams per apparatus per year*</div>
 
 ### Future: 
 I'd like to next dig into the data about the gymnasts themselves. Who are some of the greatest GOATS of all time*? For each apparatus? Which teams do they prefer?
