@@ -75,7 +75,7 @@ What about specialist schools? Recently, Utah is known for their wonderful beam 
 
 And what if we want to compare some teams head-to-head, apparatus-by-apparatus? We can do that too.
 
-<iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year" title="Tenniest teams per apparatus per year" width="800" height="1200"></iframe>
+<iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year" title="Tenniest teams per apparatus per year" width="800" height="800"></iframe>
 *Figure 5. Tenniest teams per apparatus per year*
 
 ### Future: 
