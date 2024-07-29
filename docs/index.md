@@ -1,4 +1,4 @@
-![01  tenniest_apparatus_ever](https://github.com/user-attachments/assets/96e406bb-ce27-4fd5-bcda-59edf03067ef)# The gymternet: an exploration of toepoint, artistry, and drama
+# The gymternet: an exploration of toepoint, artistry, and drama
 
 ### About me
 
@@ -37,7 +37,7 @@ There is a truism in elite gymnastics that states that the less gymnastics you d
 NCAA doesn't have a separate difficulty score, so it ought to follow that doing the least number of elements would result in a higher chance of getting a perfect 10.0. That is, it should be considerably easier to achieve a 10 on Vault (where the gymnast only has to perform one element) than any of the other events (where a gymnast has to perform at least 8 elements)
 
 But what do we have here?
-![Uploading 01. ten<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="600.0" height="400.0">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" display="block" class="plt-container" width="600.0" height="400.0">
   <style type="text/css">
   .plt-container {
    font-family: Lucida Grande, sans-serif;
@@ -592,7 +592,7 @@ text {
   </g>
   <g id="d2KJwrn">
   </g>
-</svg>niest_apparatus_ever.svg…]()
+</svg>
 
 ![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](https://github.com/LSE-ME204/me204-2024-project-jesatuts2/blob/main/docs/figures/01.%20tenniest_apparatus_ever.svg)
 
