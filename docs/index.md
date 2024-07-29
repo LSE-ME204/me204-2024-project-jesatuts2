@@ -1,8 +1,8 @@
-#The gymternet
+# The gymternet
 
-#An exploration of toepoint, artistry, and drama
+# An exploration of toepoint, artistry, and drama
 
-##About me
+## About me
 
 Hello. My name is Jes Hyne. For the past my whole life, I have been intrigued and captivated by the skill, strength, and fearlessness of women artistic gymnasts (the men, I'm sure, are very talented also). Sadly, we only really get an opportunity to watch the gymnastics once every four years, at the Olympics. More motivated gymnastics fans can find their way the yearly World Championships, but this is not nearly enough to scratch the itch.
  
@@ -14,7 +14,7 @@ With all this score bunching, how can we tell the good from the great? And more 
 
 Well, for the last two years, I have been painstakingly manually collecting, inputting, and analysing data from live score sheets into my own database. I live near the *beach*. These events happen in the *morning*. In *summer*. On the *weekend*. I can't be spending my life typing little numbers into little boxes. It's repetitive, requires precision, and follows some fairly strict protocol to get the job done. This is the sort of work that machines love the way I love going to the beach on a summer morning. It's time to delegate.
 
-##The Data: 
+## The Data: 
 
 [Road to Nationals (RTN)]('https://roadtonationals.com/results/index.php') started off as some gymnerds' project to make gymnastics scores data more accessible to the community, and has since been adopted as the official statistical site of NCAA Gymnastics, and have been providing tools for coaches, athletes, and fans ever since.
 
@@ -31,11 +31,11 @@ As a consequence of this intuitive web structure, I started off scraping directl
 When I became aware of the hidden api structure within the site, I was back in business. I could navigate around the website using the same principles (using the team ids, meet ids and years to form curls to feed into my hungry scraping machine).
 
 
-#Key Findings: 
+# Key Findings: 
 
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
 <iframe src="https://github.com/LSE-ME204/me204-2024-project-jesatuts2/blob/main/docs/figures/tenniest_apparatus_animation.html"></iframe>
 
-#Future: 
+# Future: 
 What would you do next if you had more time? What other questions could you ask of this data? What other data sources could you use to complement this data?
