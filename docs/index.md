@@ -51,7 +51,10 @@ What are the main insights you gained from your data? What are the most interest
 **direct link here**
 ![text](https://lse-me204.github.io/me204-2024-project-jesatuts2/figures/02.%20tenniest_apparatus_per_year.html)
 
-**iframe under here**
+**relative iframe under here**
+<iframe src="figures/02.%20tenniest_apparatus_per_year.html"></iframe>
+
+**direct iframe under here**
 <iframe src="https://lse-me204.github.io/me204-2024-project-jesatuts2/figures/02.%20tenniest_apparatus_per_year.html"></iframe>
 
 ### Future: 
