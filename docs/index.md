@@ -37,7 +37,13 @@ There is a truism in elite gymnastics that states that the less gymnastics you d
 NCAA doesn't have a separate difficulty score, so it ought to follow that doing the least number of elements would result in a higher chance of getting a perfect 10.0. That is, it should be considerably easier to achieve a 10 on Vault (where the gymnast only has to perform one element) than any of the other events (where a gymnast has to perform at least 8 elements)
 
 But what do we have here?
+![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](https://github.com/LSE-ME204/me204-2024-project-jesatuts2/blob/main/docs/figures/01.%20tenniest_apparatus_ever.svg)
 
+The data show that there is no major difference between apparatus in terms of what I'm dubbing *tenniness*.
+
+We can see that the slices per year have some more meaningful differences in them, so I broke them down into a little animation to explore what I like to think of as trends in perceiving perfection over the years. In the last two seasons, we can see both the quantity of 10s overall has increased dramatically, and judges seem to be favouring floor exercise for leniency.
+
+![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](https://github.com/LSE-ME204/me204-2024-project-jesatuts2/blob/main/docs/figures/01.%20tenniest_apparatus_ever.svg)
 
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
