@@ -26,7 +26,7 @@ The structure of the RTN website is very tidy; the front page gives you the inte
 
 
 ![Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.](https://github.com/user-attachments/assets/297ddf3f-de9e-48e5-9bd7-17b9cd82d35f)  
-<div align="center"><b>Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.</b></div>
+<div align="right"><b>Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.</b></div>
 
 As a consequence of this intuitive web structure, I started off scraping directly using Scrapy; using the slugs from the `<a>` tags to get the next set of links to scrape from. This became very slow, very fast. RTN has a lovely interface, but the pages load s l o w l y. This wasn't working.
 
@@ -46,14 +46,14 @@ NCAA doesn't have a separate difficulty score, so it ought to follow that doing 
 But what do we have here?
 
 <iframe src="figures/01.%20tenniest_apparatus_ever.html" title="Tenniest apparatus ever" width="800" height="400"></iframe>
-<div align="center"><b>Figure 1: Tenniest apparatus ever.</b></div>
+<div align="right"><b>Figure 1: Tenniest apparatus ever.</b></div>
 
 The data show that there is no major difference between apparatus in terms of what I'm dubbing *tenniness*.
 
 We can see that the slices per year have some more meaningful differences in them, so I broke them down into a little animation to explore what I like to think of as trends in perceiving perfection over the years. In the last two seasons, we can see both the quantity of 10s overall has increased dramatically, and judges seem to be favouring floor exercise for leniency.
 
 <iframe src="figures/02.%20tenniest_apparatus_per_year.html" title="Tenniest apparatus per year" width="800" height="450"></iframe>
-<div align="center"><b>Figure 2. Tenniest apparatus per year.</b></div>
+<div align="right"><b>Figure 2. Tenniest apparatus per year.</b></div>
 
 #### Tenniest teams
 
@@ -64,29 +64,35 @@ Which teams have been the most successful at ~~bribing the judges~~ performing p
 In the meantime, fans complain that in recent years judges are increasingly prepared to award a 10 for excellent (if imperfect) routines. What do the data say?
 
 <iframe src="figures/03.%20tenniest_teams_ever.html" title="Tenniest teams ever" width="800" height="600"></iframe>
-<div align="center"><b>Figure 3. Tenniest teams ever</b></div>
+<div align="right"><b>Figure 3. Tenniest teams ever</b></div>
 
 No surprises here; Oklahoma dominates this analysis. However, the relatively poor perfomance of Alabama and Georgia is somewhat surprising. Could it be that history didn't start in 2015 and their dominance pre-dates this analysis? Scientists will never know.
 
 What about specialist schools? Recently, Utah is known for their wonderful beam rotation, and Cal has excellent bars workers. Are they excellent enough to show up in the disaggregated data?
 
 <iframe src="figures/04.%20tenniest_teams_per_apparatus.html" title="Tenniest apparatus per apparatus" width="800" height="600"></iframe>
-<div align="center"><b>Figure 4. Tenniest teams per apparatus</b></div>
+<div align="right"><b>Figure 4. Tenniest teams per apparatus</b></div>
+
+We don't really need to get into *why* Cal is criminally under-rewarded for their excellent toe-point, the rod-straight handstands, their legs-together and their sky-high releases. It's wild to me that they have scored more 10s on every other event (they are wonderful on the other events too). Make it make sense. It does look like there's a bit of variance between the apparatus. Oklahoma is strong everywhere, and we can see that as expected, Utah performs very strongly on balance beam. It's somewhat surprising to me to see more 10s for UCLA on bars than on floor, as they are known for their viral, performance-driven floor routines (and I expect 10s are more likely to go viral than non-10s).
 
 And what if we want to compare some teams head-to-head, apparatus-by-apparatus? We can do that too.
 
 <iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year" title="Tenniest teams per apparatus per year" width="800" height="800"></iframe>
-<div align="center"><b>Figure 5. Tenniest teams per apparatus per year</b></div>
+<div align="right"><b>Figure 5. Tenniest teams per apparatus per year</b></div>
+
+Play around by clicking on and off the items in the legend. Future versions of this graph will export with the drop-down menu and check-boxes as in the ![Notebook](../notebooks/NB03-EDA-and-Dataviz.ipynb) connected to this project.
 
 ### Future: 
-I'd like to next dig into the data about the gymnasts themselves. Who are some of the greatest GOATS of all time*? For each apparatus? Which teams do they prefer?
+Most importantly, I'd like to next dig into the data about the gymnasts themselves. Who are some of the greatest GOATS of all time<sup>*</sup>? For each apparatus? Which teams do they prefer?
 
 I'd like to do some analysis on the average and median scores of gymnasts, as this is, in my view, a better predictor of their overall performance than their capability to get a 10.
 
 Eventually, I'd like to build a small tool that uses indicators like performance frequency, average or median score, and other factors that might impact performance that aren't currently captured in my data (home or away might factor, judging panels might factor, proximity to mid-terms might factor, etc).
 
+There's a real potential to stir up some good gossip if I am able to integrate some information I already have about the judges into this data and find some patterns and (we secretly hope) *corruption*. Or unconscious bias, whatever. Nobody seems to be really tracking that sort of information and there's nothing a gymfan likes more than complaining about the judges. *What if we could evidence our whingeing?* That's the dream.
+
 Finally, I'd like to integrate the tools and skills I have built doing this assignment into my existing rails gymternet project, and buy myself some beach-time. If my fantasy team wins next year, I'll buy you a beer.
 
-There's a real potential to stir up some good gossip if I am able to integrate some information I already have about the judges into this data and find some patterns and (we secretly hope) *corruption*. Or unconscious bias, whatever. Nobody seems to be really tracking that sort of information and there's nothing a gymfan likes more than complaining about the judges. *What if we could evidence our whingeing?* That's the dream.
+<sup>*</sup> as always, time began in 2015.
 
 ![That's me out](https://i0.wp.com/balancebeamsituation.com/wp-content/uploads/2022/02/curtissalute.gif?resize=474%2C305&ssl=1)
