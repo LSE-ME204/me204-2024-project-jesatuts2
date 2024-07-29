@@ -42,7 +42,7 @@ NCAA doesn't have a separate difficulty score, so it ought to follow that doing 
 
 But what do we have here?
 
-![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](figures/01.%20tenniest_apparatus_ever.svg)
+<iframe src="figures/01.%20tenniest_apparatus_ever.html" title="Tenniest apparatus ever" width="800" height="400"></iframe>
 
 The data show that there is no major difference between apparatus in terms of what I'm dubbing *tenniness*.
 
@@ -54,11 +54,17 @@ We can see that the slices per year have some more meaningful differences in the
 
 ***Setting the scene:*** **Imagine I'm a prospective NCAA college gymnast, and I think it might feel good a 10 every once in a while. Which colleges should I consider attending?**
 
-Which teams have been the most successful at ~bribing the judges~ performing perfect gymnastics? Georgia and Alabama have legacies of dominance, but most recently Oklahoma has been the most dominant team. 
+Which teams have been the most successful at ~~bribing the judges~~ performing perfect gymnastics? Georgia and Alabama have legacies of dominance, but most recently Oklahoma has been the most dominant team. 
 
 In the meantime, fans complain that in recent years judges are increasingly prepared to award a 10 for excellent (if imperfect) routines. What do the data say?
 
-![A plot comparing the total number of 10s achieved across all apparatus from 2015-2024](figures/03.%20tenniest_teams_ever.svg)
+<iframe src="figures/03.%20tenniest_teams_ever.html" title="Tenniest teams ever" width="1200" height="1200"></iframe>
+
+No surprises here; Oklahoma dominates this analysis. However, the relatively poor perfomance of Alabama and Georgia is somewhat surprising. Could it be that history didn't start in 2015 and their dominance pre-dates this analysis? Scientists will never know.
+
+What about specialist schools? Recently, Utah is known for their wonderful beam rotation, and Cal has excellent bars workers. Are they excellent enough to show up in the disaggregated data?
+
+<iframe src="figures/04.%20tenniest_teams_per_apparatus.html" title="Tenniest apparatus per apparatus" width="1200" height="1800"></iframe>
 
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
