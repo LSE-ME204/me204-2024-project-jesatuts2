@@ -32,6 +32,10 @@ When I became aware of the hidden api structure within the site, I was back in b
 
 ### Key Findings: 
 
+#### Tenniest apparatus
+
+**Setting the scene:** Imagine I'm a NCAA college gymnast, and I think it might feel good a 10 every once in a while. Where should I focus my training?
+
 There is a truism in elite gymnastics that states that the less gymnastics you do, the higher you will score. We saw this play out over the 2020/1 Olympic Games, with Olympic All-Round gold-medallist Sunisa Lee dropping elements of her routines that were attracting more execution deductions than they were contributing to her overall difficulty value. Evidentally, it paid off.
 
 NCAA doesn't have a separate difficulty score, so it ought to follow that doing the least number of elements would result in a higher chance of getting a perfect 10.0. That is, it should be considerably easier to achieve a 10 on Vault (where the gymnast only has to perform one element) than any of the other events (where a gymnast has to perform at least 8 elements)
@@ -47,16 +51,10 @@ We can see that the slices per year have some more meaningful differences in the
 **relative iframe under here**
 <iframe src="figures/02.%20tenniest_apparatus_per_year.html" title="Tenniest apparatus per year" width="800" height="400"></iframe>
 
+#### Tenniest teams
+
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
-**direct link here**
-![text](https://lse-me204.github.io/me204-2024-project-jesatuts2/figures/02.%20tenniest_apparatus_per_year.html)
-
-**relative iframe under here**
-<iframe src="figures/02.%20tenniest_apparatus_per_year.html" title="Tenniest apparatus per year" width="800" height="400"></iframe>
-
-**direct iframe under here**
-<iframe src="https://lse-me204.github.io/me204-2024-project-jesatuts2/figures/02.%20tenniest_apparatus_per_year.html"></iframe>
 
 ### Future: 
 What would you do next if you had more time? What other questions could you ask of this data? What other data sources could you use to complement this data?
