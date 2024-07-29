@@ -24,7 +24,11 @@ I chose to analyse data over the past 10 years. This was arbitrary, and I notice
 
 The structure of the RTN website is very tidy; the front page gives you the internal reference numbers for each team, which in turn can lead you to the team's dashboard. The team's dashboard gives you the internal reference number for each meet, which in turn can lead you to the url for the meet dashboard. The meet dashboard gives you information about the scores and the gymnasts' performance; the units of analysis I am most interested in.
 
-![Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.](https://github.com/user-attachments/assets/297ddf3f-de9e-48e5-9bd7-17b9cd82d35f)
+<figure>
+![Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years.](https://github.com/user-attachments/assets/297ddf3f-de9e-48e5-9bd7-17b9cd82d35f)  
+<figcaption>Navigating around the RTN website. URL slugs point to internal references to teams, meets, and years..</figcaption>
+</figure>
+
 As a consequence of this intuitive web structure, I started off scraping directly using Scrapy; using the slugs from the `<a>` tags to get the next set of links to scrape from. This became very slow, very fast. RTN has a lovely interface, but the pages load s l o w l y. This wasn't working.
 
 When I became aware of the hidden api structure within the site, I was back in business. I could navigate around the website using the same principles (using the team ids, meet ids and years to form curls to feed into my hungry scraping machine).
