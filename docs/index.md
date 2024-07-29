@@ -58,13 +58,17 @@ Which teams have been the most successful at ~~bribing the judges~~ performing p
 
 In the meantime, fans complain that in recent years judges are increasingly prepared to award a 10 for excellent (if imperfect) routines. What do the data say?
 
-<iframe src="figures/03.%20tenniest_teams_ever.html" title="Tenniest teams ever" width="1200" height="1200"></iframe>
+<iframe src="figures/03.%20tenniest_teams_ever.html" title="Tenniest teams ever" width="800" height="800"></iframe>
 
 No surprises here; Oklahoma dominates this analysis. However, the relatively poor perfomance of Alabama and Georgia is somewhat surprising. Could it be that history didn't start in 2015 and their dominance pre-dates this analysis? Scientists will never know.
 
 What about specialist schools? Recently, Utah is known for their wonderful beam rotation, and Cal has excellent bars workers. Are they excellent enough to show up in the disaggregated data?
 
-<iframe src="figures/04.%20tenniest_teams_per_apparatus.html" title="Tenniest apparatus per apparatus" width="1200" height="1800"></iframe>
+<iframe src="figures/04.%20tenniest_teams_per_apparatus.html" title="Tenniest apparatus per apparatus" width="800" height="600"></iframe>
+
+And what if we want to compare some teams head-to-head, apparatus-by-apparatus? We can do that too.
+
+<iframe src="figures/05.%20tenniest_teams_per_apparatus_per_year.html" title="Tenniest apparatus per apparatus per year" width="800"></iframe>
 
 What are the main insights you gained from your data? What are the most interesting things you found? Something like “Once I cleaned up the data by doing X, Y and Z, I found that the price of bread in the UK has increased by 20% in the last 5 years while the price of milk has remained stable, as shown in the plot below” would be a good example.
 
