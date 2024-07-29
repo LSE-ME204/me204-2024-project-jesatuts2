@@ -6,7 +6,7 @@ Hello. My name is Jes Hyne. For the past my whole life, I have been intrigued an
  
 When I learned of NCAA gymnastics tournament in the USA, I was thrilled. They still use the 10.0 system! Perfection is achievable! Go you go for a team without uncomfortable nationalistic implications! The code of points is slightly easier than in the elite competitions, resulting in cleaner, more precisely executed skills. Pointed toes! Oversplits! Stuck landings!
 
-![Can you see getting jazzed for something like this? Katelyn Ohashi performs a sky-high split jump directly into splits](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2N3MzE2NWp0OTZoZDFrczE5N21idWJ3OGdiN3Uwbm13MWNpZ29meiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4IP1VnrIUNRxKygV6/giphy.webp)
+![Can you see getting jazzed for something like this? Katelyn Ohashi performs a sky-high switch split jump directly into splits](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2N3MzE2NWp0OTZoZDFrczE5N21idWJ3OGdiN3Uwbm13MWNpZ29meiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g4IP1VnrIUNRxKygV6/giphy.webp)
 
 Because of the general high standard across the board, week after week during the season, scores pour in and it's hard to really determine who is relatively good and who is bad. When I was a kid, anything over an 8.0 was good and a 9.0 was incredible. In this tournament, among the top teams, it seems like a 9.7 or lower is reserved for routines with an obvious error, and the teams should only really be happy with a 9.8 or higher.
 
